@@ -61,8 +61,8 @@ class _MultiCalculatioinPageState extends State<MultiCalculationPage> {
                       onPressed: () {
                         if (numberOneController != null &&
                             numberTwoController != null) {
-                          resultSum = int.parse(numberOneController.text) +
-                              int.parse(numberTwoController.text);
+                          resultSum = sumOperation(int.parse(numberOneController.text),
+                              int.parse(numberTwoController.text));
                           setState(() {});
                         }
                       },
@@ -77,8 +77,7 @@ class _MultiCalculatioinPageState extends State<MultiCalculationPage> {
                       onPressed: () {
                         if (numberOneController != null &&
                             numberTwoController != null) {
-                          resultSub = int.parse(numberOneController.text) -
-                              int.parse(numberTwoController.text);
+                          resultSub = subOperation(int.parse(numberOneController.text), int.parse(numberTwoController.text));
                           setState(() {});
                         }
                       },
@@ -93,8 +92,8 @@ class _MultiCalculatioinPageState extends State<MultiCalculationPage> {
                       onPressed: () {
                         if (numberOneController != null &&
                             numberTwoController != null) {
-                          resultMul = int.parse(numberOneController.text) *
-                              int.parse(numberTwoController.text);
+                          resultMul = mulOperation(int.parse(numberOneController.text),
+                              int.parse(numberTwoController.text));
                           setState(() {});
                         }
                       },
@@ -109,8 +108,8 @@ class _MultiCalculatioinPageState extends State<MultiCalculationPage> {
                       onPressed: () {
                         if (numberOneController != null &&
                             numberTwoController != null) {
-                          resultDiv = double.parse(numberOneController.text) /
-                              double.parse(numberTwoController.text);
+                          resultDiv = divOperation(num.parse(numberOneController.text),
+                              num.parse(numberTwoController.text));
                           setState(() {});
                         }
                       },
