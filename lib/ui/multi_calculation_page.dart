@@ -30,6 +30,7 @@ class _MultiCalculatioinPageState extends State<MultiCalculationPage> {
             width: MediaQuery.of(context).size.width*0.80,
         child: Column(
           children: [
+            mSpacer(mHeight: 20.0),
             TextField(
               inputFormatters: [LengthLimitingTextInputFormatter(10)],
               controller: numberOneController,

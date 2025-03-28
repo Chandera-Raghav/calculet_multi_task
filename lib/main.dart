@@ -1,5 +1,7 @@
 import 'package:calculet_task/local/page_model.dart';
+import 'package:calculet_task/ui/greater_number_page.dart';
 import 'package:calculet_task/ui/multi_calculation_page.dart';
+import 'package:calculet_task/ui/odd_even_number_page.dart';
 import 'package:calculet_task/ui/simple_calculation_page.dart';
 import 'package:flutter/material.dart';
 
@@ -33,7 +35,9 @@ class _MyHomePageState extends State<MyHomePage> {
           pageName: "Simple Calculation",
           superKey: const SimpleCalculationPage()),
       PageModel(
-          pageName: "Multi calculation", superKey: const MultiCalculationPage())
+          pageName: "Multi calculation", superKey: const MultiCalculationPage()),
+      PageModel(pageName: "OddEven Number", superKey: const OddEvenNumberPage()),
+      PageModel(pageName: "Check the Greater", superKey: const GreaterNumberPage())
     ];
     return Scaffold(
       appBar: AppBar(
